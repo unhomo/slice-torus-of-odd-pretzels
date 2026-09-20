@@ -18,8 +18,9 @@ odd pretzel knots* by Yury Belousov and Vadim Stepaniuk.
 
 The script enumerates odd pretzel parameters not covered by Theorem 2,
 one representative per orbit under cyclic shifts, reversal, and global
-sign change. For each tuple it builds the PD code using `pretzel_pd.py`
-by [Ashley Alfaro](https://github.com/ashley-alf/pretzel_pd),
+sign change, skipping tuples that contain both $1$ and $-1$ (such blocks
+cancel in pairs by isotopy). For each tuple it builds the PD code
+using `pretzel_pd.py` by [Ashley Alfaro](https://github.com/ashley-alf/pretzel_pd),
 computes tau via `knot_floer_homology`, and compares the result to the
 conjectured formula.
 
@@ -37,8 +38,8 @@ conjectured formula.
 
 | max-abs | max-blocks | checked | mismatches |
 |---------|------------|---------|------------|
-| 17      | 5          | 5220    | 0          |
-| 7       | 7          | 9354    | 0          |
+| 17      | 5          | 3164    | 0          |
+| 9       | 7          | 9354    | 0          |
 
 ## License
 
