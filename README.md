@@ -38,7 +38,7 @@ conjectured formula.
 
 | max-abs | max-blocks | checked | mismatches |
 |---------|------------|---------|------------|
-| 17      | 5          | 3164    | 0          |
+| 19      | 5          | 5220    | 0          |
 | 9       | 7          | 9354    | 0          |
 
 ## License
