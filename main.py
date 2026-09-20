@@ -57,6 +57,13 @@ def has_adjacent_opposites(params: Params) -> bool:
     return any(params[i] == -params[(i + 1) % n] for i in range(n))
 
 
+def has_both_units(params: Params) -> bool:
+    """
+    True iff both 1 and -1 appear in the tuple, regardless of adjacency.
+    """
+    return 1 in params and -1 in params
+
+
 def min_abs_is_mixed(params: Params) -> bool:
     """
     True iff condition (b) of Theorem 2 fails for the original tuple:
@@ -68,10 +75,14 @@ def min_abs_is_mixed(params: Params) -> bool:
 
 def is_interesting(params: Params) -> bool:
     """
-    True iff params is outside the scope of Theorem 2 and
-    has no adjacent cancellable pair that can be removed by concordance.
+    True iff params is outside the scope of Theorem 2, has no cyclically
+    adjacent cancellable pair, and does not contain both 1 and -1.
     """
-    return not has_adjacent_opposites(params) and min_abs_is_mixed(params)
+    return (
+        not has_adjacent_opposites(params)
+        and not has_both_units(params)
+        and min_abs_is_mixed(params)
+    )
 
 
 # --------------------------------------------------------------------------- #
