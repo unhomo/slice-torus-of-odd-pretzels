@@ -136,7 +136,7 @@ def valid_labeling_2(start_cell, end_cell, pretzel,strand, direction):
         pair_2 = (b,c)
         if a < 0: # we going down so check if d it is bigger 
             if abs(a) < abs(d): # if it's not then make it False
-                left_strand_from_start = False 
+                l_strand_from_start = False 
         else: #if going up u wanna check d is smaller
             if abs(d) < abs(a): 
                 left_strand_from_start = False 
@@ -200,7 +200,7 @@ def pretzel_pd_2(nums, pairs):
 
         else: 
             new_cell = (temp_cell[1]+direction, temp_cell[0]+direction) 
-            if new_cell[0] == 0 or new_cell[1] == 0: 
+            if new_cell[0] == 0 or new_cell[0] == 0: 
                 new_cell = change_zero_cell(new_cell, pretzel, goal_cell)
                 #print("new cell: ", new_cell)
         
