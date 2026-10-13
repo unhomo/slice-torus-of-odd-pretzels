@@ -62,8 +62,8 @@ def min_abs_is_mixed(params: Params) -> bool:
 
 def is_interesting(params: Params) -> bool:
     """
-    True iff `params` is outside the scope of Theorem 2, has no cyclically
-    adjacent cancellable pair, and does not contain both 1 and -1.
+    True iff `params` is outside the scope of Theorem 2, 
+    has no cyclically adjacent cancellable pair.
     """
     return (
         not has_adjacent_opposites(params)
