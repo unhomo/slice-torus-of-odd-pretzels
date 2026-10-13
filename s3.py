@@ -31,7 +31,7 @@ VERIFIED_LOG = PROJECT_DIR / "verified_s3.log"
 MISMATCH_LOG = PROJECT_DIR / "mismatches_s3.log"
 
 
-KNOTJOB_JAR = Path(r"\KnotJob.jar") # <----- edit this path to your local copy of KnotJob.jar
+KNOTJOB_JAR = Path(r"C:\Users\stepa\Desktop\KnotJob\KnotJob.jar") # <----- edit this path to your local copy of KnotJob.jar
 JAVA = "java"
 
 
