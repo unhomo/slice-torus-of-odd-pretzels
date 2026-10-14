@@ -22,10 +22,12 @@ odd pretzel knots* by Yury Belousov and Vadim Stepaniuk.
 - `s3.py` — verifies the conjecture for the sl(3) Rasmussen invariant,
   using [`KnotJob`](https://maths.dur.ac.uk/users/dirk.schuetz/knotjob.html).
 
+The PD code of the pretzel diagram is built using
+[`pretzel_pd.py`](https://github.com/ashley-alf/pretzel_pd) by Ashley Alfaro.
 Both scripts enumerate one representative per orbit of pretzel parameters
 under cyclic shifts, reversal, and global sign change, skip tuples already
-covered by Theorem 2 of the paper, and compare the computed invariant to
-the conjectured formula.  Already verified tuples are stored in log files
+covered by case (b) of Theorem 2, and compare the computed invariant
+to the conjectured formula.  Already verified tuples are stored in log files
 and skipped on reruns.
 
 ## Requirements
