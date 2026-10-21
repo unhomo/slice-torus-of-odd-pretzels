@@ -12,8 +12,8 @@ the multiset obtained from the multiset $\lbrace a_{1}, \ldots, a_{n} \rbrace$ b
 iteratively removing pairs of the form $\lbrace t, -t \rbrace$ until
 no such pair remains.
 
-Companion code for the paper *Explicit formula for the Rasmussen invariant of
-odd pretzel knots* by Yury Belousov and Vadim Stepaniuk.
+Companion code for the paper [*Explicit formula for the Rasmussen invariant of
+odd pretzel knots*](https://arxiv.org/abs/2610.24083) by Yury Belousov and Vadim Stepaniuk.
 
 ## Scripts
 
